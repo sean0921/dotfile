@@ -1,0 +1,10 @@
+set mouse=n
+set number
+set smarttab
+set smartindent
+inoremap jk <ESC>
+cnoremap jk <ESC>
+nnoremap <SPACE> :w<CR>
+set expandtab shiftwidth=4 softtabstop=4
+set hlsearch
+syntax on
