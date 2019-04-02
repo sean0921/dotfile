@@ -1,0 +1,5 @@
+bindkey \^U backward-kill-line
+export TERM='xterm-256color'
+source $HOME/tools/sac/bin/sacinit.sh
+export PATH=$HOME/tools/sac/bin:$PATH
+export WINEARCH=win32
