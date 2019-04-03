@@ -2,18 +2,16 @@ all:
 	@echo 'nothing :)'
 
 install:
-	install -m 0644 dotvimrc ~/.vimrc
-	install -m 0644 dottmux.conf ~/.tmux.conf
-
-update:
-	cp ~/.vimrc ~/.vimrc.bak && install -m 0644 dotvimrc ~/.vimrc
-	cp ~/.tmux.conf ~/.tmux.conf.bak && install -m 0644 dottmux.conf ~/.tmux.conf
+	$(MAKE) vimrc zshrc tmuxconf
 
 vimrc:
-	install -m 0644 dotvimrc ~/.vimrc
+	install -m 0644 dotvimrc $$HOME
+
+zshrc:
+	install -m 0644 dotzshrc $$HOME
 
 tmuxconf:
-	install -m 0644 dottmux.conf ~/.tmux.conf
+	install -m 0644 dottmux.conf $$HOME
 
 clean:
 	@echo 'nothing :)'
