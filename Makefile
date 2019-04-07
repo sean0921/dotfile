@@ -5,9 +5,9 @@ install:
 	$(MAKE) vimrc zshrc tmuxconf
 
 activate:
-	echo 'source $$HOME/dotvimrc' >> $$HOME/.vimrc
-	echo 'source $$HOME/dotzshrc' >> $$HOME/.zshrc
-	echo 'source $$HOME/dottmux.conf' >> $$HOME/.tmux.conf
+	test -e $$HOME/dotvimrc && echo 'source $$HOME/dotvimrc' >> $$HOME/.vimrc
+	test -e $$HOME/dotzshrc && echo 'source $$HOME/dotzshrc' >> $$HOME/.zshrc
+	test -e $$HOME/dottmux.conf && echo 'source $$HOME/dottmux.conf' >> $$HOME/.tmux.conf
 
 vimrc:
 	install -m 0644 dotvimrc $$HOME
