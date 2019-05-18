@@ -18,5 +18,9 @@ zshrc:
 tmuxconf:
 	install -m 0644 dottmux.conf $$HOME
 
+libinput:
+	mkdir -p $$HOME/.config
+	install -m 0644 libinput-gestures.conf $$HOME/.config
+
 clean:
 	@echo 'nothing :)'
