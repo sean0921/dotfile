@@ -1,0 +1,4 @@
+export PATH="$PATH":"$HOME/.local/bin"
+export TERM='xterm-256color'
+export WINEARCH=win32
+alias  objdump='objdump -M intel'
