@@ -9,6 +9,10 @@ set expandtab shiftwidth=4 softtabstop=4
 set hlsearch
 syntax on
 
+autocmd FileType make setlocal noexpandtab
+autocmd FileType make setlocal nosmarttab
+autocmd FileType make setlocal expandtab shiftwidth=0 softtabstop=0
+
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
 if has("autocmd")
