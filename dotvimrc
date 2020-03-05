@@ -21,3 +21,8 @@ autocmd FileType make setlocal nosmarttab
 autocmd FileType make setlocal expandtab shiftwidth=0 softtabstop=0
 
 set viminfo='20,<1000,s1000
+
+" for fortran to unlimited leng length (80) by -ffixed-line-length-none
+" options in gfortran
+let b:fortran_fixed_source=0
+set syntax=fortran
